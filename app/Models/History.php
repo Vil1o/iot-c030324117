@@ -10,4 +10,9 @@ class History extends Model
     //
     use HasFactory;
     protected $fillable = ['Lamp_id', 'status'];
+
+    public function lamp()
+    {
+        return $this->belongsTo(Lamp::class);
+    }
 }

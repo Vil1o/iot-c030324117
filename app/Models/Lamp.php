@@ -11,4 +11,9 @@ class Lamp extends Model
     //
     use HasFactory;
     protected $fillable = ['name', 'status'];
+
+    public function histories()
+    {
+        return $this->hasMany(History::class);
+    }
 }
