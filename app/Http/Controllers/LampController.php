@@ -32,7 +32,7 @@ class LampController extends Controller
             return response()->json ([
                 'success' => true,
                 'message' => $lamp->name . 'Berhasil Dimatikan!',
-                'status' => $lamp
+                'data' => $lamp
             ]);
         } else if ($lamp->status == 0) {
             

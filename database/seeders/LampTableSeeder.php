@@ -14,15 +14,15 @@ class LampTableSeeder extends Seeder
     public function run(): void
     {
         Lamp ::create([ 
-            'name' => 'Lampu Teras',
+            'name' => 'Lampu Teras ',
         ]);
 
         Lamp ::create([ 
-            'name' => 'Lampu Lampu Tengah',
+            'name' => 'Lampu Tengah ',
         ]);
 
         Lamp ::create([ 
-            'name' => 'Lampu Kamar',
+            'name' => 'Lampu Kamar ',
         ]);
 
     }
