@@ -34,6 +34,6 @@ class HistoryController extends Controller
             $chartData['total'][] = $data->total;
         }
 
-        return view('history.index', compact('chartData', 'periode'));
+        return view('histories.index', compact('chartData', 'periode'));
     }
 }
