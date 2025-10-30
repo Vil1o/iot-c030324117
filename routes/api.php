@@ -16,6 +16,8 @@ Route::get('/lamps', [App\Http\Controllers\Api\LampController::class, 'index']);
 //update lamp
 Route::post('/lamps/{id}', [App\Http\Controllers\Api\LampController::class, 'updateLamp']);
 
+//status lamps
+Route::get('/status', [App\Http\Controllers\Api\StatusController::class, 'index']);
 
 
 ?>
