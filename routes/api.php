@@ -19,5 +19,7 @@ Route::post('/lamps/{id}', [App\Http\Controllers\Api\LampController::class, 'upd
 //status lamps
 Route::get('/status', [App\Http\Controllers\Api\StatusController::class, 'index']);
 
+//histories
+Route::get('/histories', [App\Http\Controllers\Api\HistoryController::class, 'index']);
 
 ?>
